@@ -1,1 +1,9 @@
+com\gudratli\commonlibrary\queryfilter\dto\SearchCriteria.class
+com\gudratli\commonlibrary\queryfilter\dto\SearchFilter.class
+com\gudratli\commonlibrary\queryfilter\dto\Sorting.class
+com\gudratli\commonlibrary\queryfilter\dto\SpecificationImpl.class
 com\gudratli\commonlibrary\httpclient\LoggerHttpClient.class
+com\gudratli\commonlibrary\queryfilter\dto\Paging.class
+com\gudratli\commonlibrary\queryfilter\service\gimpl\GSearchFilterService.class
+com\gudratli\commonlibrary\config\BeanConfiguration.class
+com\gudratli\commonlibrary\queryfilter\service\SearchFilterService.class
