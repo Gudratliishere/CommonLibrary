@@ -17,7 +17,7 @@ and applying filter, pagination, and sorting operations to Spring Data JPA repos
 <dependency>
   <groupId>com.gudratli</groupId>
   <artifactId>common-library</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 </dependency>
 ```
 
