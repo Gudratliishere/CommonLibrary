@@ -1,8 +1,12 @@
 com\gudratli\commonlibrary\queryfilter\dto\SearchCriteria.class
-com\gudratli\commonlibrary\queryfilter\dto\SearchFilter.class
 com\gudratli\commonlibrary\queryfilter\dto\Sorting.class
+com\gudratli\commonlibrary\queryfilter\dto\Paging.class
+com\gudratli\commonlibrary\queryfilter\dto\SearchCriteria$SearchCriteriaBuilder.class
+com\gudratli\commonlibrary\queryfilter\service\gimpl\GSearchFilterService.class
+com\gudratli\commonlibrary\queryfilter\dto\Paging$PagingBuilder.class
+com\gudratli\commonlibrary\queryfilter\service\SearchFilterService.class
+com\gudratli\commonlibrary\queryfilter\dto\SearchFilter.class
+com\gudratli\commonlibrary\queryfilter\dto\Sorting$SortingBuilder.class
 com\gudratli\commonlibrary\queryfilter\dto\SpecificationImpl.class
 com\gudratli\commonlibrary\httpclient\LoggerHttpClient.class
-com\gudratli\commonlibrary\queryfilter\dto\Paging.class
-com\gudratli\commonlibrary\queryfilter\service\gimpl\GSearchFilterService.class
-com\gudratli\commonlibrary\queryfilter\service\SearchFilterService.class
+com\gudratli\commonlibrary\queryfilter\dto\SearchFilter$SearchFilterBuilder.class
