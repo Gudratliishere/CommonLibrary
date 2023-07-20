@@ -8,6 +8,7 @@ and applying filter, pagination, and sorting operations to Spring Data JPA repos
 - `LoggerHttpClient`: A utility class for logging HTTP requests and responses sent via WebClient.
 - `SearchFilterService`: A utility class for applying filter, pagination, and sorting operations to Spring Data JPA
   repositories.
+- `FieldMapper`: A utility mapper class that maps Map object to any object fields.
 
 ## Getting Started
 
@@ -17,7 +18,7 @@ and applying filter, pagination, and sorting operations to Spring Data JPA repos
 <dependency>
   <groupId>com.gudratli</groupId>
   <artifactId>common-library</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
 </dependency>
 ```
 
@@ -109,6 +110,34 @@ public class GDeviceService implements DeviceService
 
         return deviceRepository.findAll(specification, pageable);
     }
+}
+```
+
+### FieldMapper
+
+```java
+import com.gudratli.commonlibrary.mapper.FieldMapper;
+
+@RestController
+@RequestMapping("/user")
+public class UserController
+{
+  private final FieldMapper fieldMapper;
+  private final UserService userService;
+  
+  @PatchMapping
+  public ResponseEntity<User> update (@PathVariable Long userId,
+          @RequestBody Map<Object, Object> fields) 
+  {
+    User user = userService.getByUserId(userId);
+
+    //mapping Map object to User object
+    fieldMapper.map(fields, user);
+
+    user = userService.update(user);
+
+    return ResponseEntity.ok(user);
+  }
 }
 ```
 
