@@ -1,5 +1,6 @@
 com\gudratli\commonlibrary\queryfilter\dto\SearchCriteria.class
 com\gudratli\commonlibrary\queryfilter\dto\Sorting.class
+com\gudratli\commonlibrary\mapper\FieldMapper.class
 com\gudratli\commonlibrary\queryfilter\dto\Paging.class
 com\gudratli\commonlibrary\queryfilter\dto\SearchCriteria$SearchCriteriaBuilder.class
 com\gudratli\commonlibrary\queryfilter\service\gimpl\GSearchFilterService.class
