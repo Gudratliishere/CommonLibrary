@@ -24,7 +24,7 @@ public class GSearchFilterService implements SearchFilterService
                     new SpecificationImpl<>(searchFilter.getSearchCriteriaList().get(0)));
 
             for (int i = 1; i < searchFilter.getSearchCriteriaList().size(); i++)
-                specification.and(new SpecificationImpl<>(searchFilter.getSearchCriteriaList().get(i)));
+                specification = specification.and(new SpecificationImpl<>(searchFilter.getSearchCriteriaList().get(i)));
         }
 
         return specification;
